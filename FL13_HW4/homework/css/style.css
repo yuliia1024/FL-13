@@ -1,0 +1,248 @@
+html {
+    line-height: 1.15;
+}
+body {
+    margin: 0;
+    font-size: 16px;
+    color: #777;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+b,
+strong {
+    font-weight: bolder;
+}
+
+.header {
+    position: sticky;
+    top: 0px;
+    height: 10vh;
+    background-color: #ffffff;
+}
+.header-wrap {
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 90%;
+}
+.logo {
+    margin: 0 30px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.logo-text {
+    font-weight: normal;
+    letter-spacing: 0.28rem;
+    color: #777;
+}
+.nav-link {
+    color: #777;
+    text-decoration: none;
+    letter-spacing: 0.12rem;
+    margin-right: 40px;
+}
+.nav-link:hover {
+    color: #bfba55;
+}
+
+@media screen and (min-width: 900px) {
+    .hero{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../img/home-bg.jpg');
+        background-size: cover;
+        background-position-y: 10vh;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+   .blog-post-img,.blog-post-avatar{display: block}
+    .blog-post-img-e,.blog-post-avatar-e{display: none;}
+
+}
+
+@media screen and (max-width: 899px) {
+    .hero{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../img/home.jpg');
+        background-size: cover;
+        background-position-y: 10vh;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+   .blog-post-img-e,.blog-post-avatar-e{display: block;}
+
+    .blog-post-img,.blog-post-avatar{display: none}
+}
+.hero {
+    height: 100vh;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
+.hero p {
+    margin: 0;
+}
+.hero-wrap {
+    padding-top: 20%;
+}
+.hero-header {
+    font-size: 4.5rem;
+    letter-spacing: 0.02rem;
+    margin-top: 0;
+    margin-bottom: 1.3%;
+}
+.hero-description {
+    margin: 0;
+    color: #bfba55;
+    font-size: 0.9rem;
+    letter-spacing: 0.13rem;
+}
+.hero-btn {
+    display: block;
+    width: 160px;
+    padding-top: 0.9rem;
+    padding-bottom: 1rem;
+    margin: 3% auto 0 auto;
+    border-radius: 40px;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #777;
+    font-size: 0.8rem;
+    letter-spacing: 0.03rem;
+    text-align: center;
+}
+.hero-btn:hover {
+    color: #000;
+}
+
+.main-section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main-section-wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.blog-post {
+    padding-top: 5.4rem;
+    padding-bottom: 4.1rem;
+    border-bottom: 1px solid #cccccc;
+}
+.blog-post:last-child {
+    border-bottom: none;
+}
+.blog-post-img, .blog-post-img-e {
+    width: 100%;
+    margin-bottom: 0.4rem;
+}
+.blog-post-header {
+    font-size: 2rem;
+    margin-bottom: 0.9rem;
+    color: #000;
+}
+.blog-post-props {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.3rem;
+}
+.blog-post-avatar, .blog-post-avatar-e {
+    width: 42px;
+    border-radius: 50%;
+    margin-right: 0.4rem;
+}
+.blog-post-author {
+    margin-right: 1.6rem;
+    font-style: normal;
+}
+.blog-post-time {
+    margin-right: 1rem;
+}
+.blog-entry {
+    line-height: 1.6rem;
+}
+.continue-btn {
+    display: block;
+    width: 188px;
+    margin-top: 2.3rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    border-radius: 40px;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #777;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    border: 1px solid #777;
+    font-weight: bolder;
+}
+.continue-btn:hover {
+    color: #000;
+    border-color: #000;
+}
+.comments:before{
+    content:'\1F4AD' ;
+}
+.footer {
+    margin-top: 3.1rem;
+    background-color: #000;
+}
+.footer-wrap {
+    color: #777;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 5.9rem;
+    padding-bottom: 5.8rem;
+}
+.footer-inner {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+.footer-left {
+    flex: 1;
+    padding-right: 23%;
+}
+.footer-right {
+    flex: 1;
+}
+.footer-bottom {
+    padding-top: 0.3rem;
+    width: 100%;
+}
+
+.footer-header {
+    margin: 0 0 0.9rem 0;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.footer-description {
+    margin: 0;
+    line-height: 1.6rem;
+}
+.footer-address {
+    line-height: 1.6rem;
+    font-style: normal;
+}
+.footer-address p {
+    margin: 0 0 0.7rem 0;
+}
+.footer-address p:last-child {
+    margin-bottom: 0;
+}
+.footer .mail-link {
+    color: inherit;
+    text-decoration: none;
+}
+.footer .mail-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
